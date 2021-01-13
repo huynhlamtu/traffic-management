@@ -30,6 +30,7 @@ namespace WebAPI.Controllers
         public IHttpActionResult GetDuong(int id)
         {
             Duong duong = db.Duong.Find(id);
+            
             if (duong == null)
             {
                 return NotFound();

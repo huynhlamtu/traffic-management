@@ -38,6 +38,44 @@ namespace WebAPI.Controllers
         }
 
         
+        [ResponseType(typeof(ChotGiaoThongDetail))]
+        public IHttpActionResult Postchotgiaothongdetail(ChotGiaoThongDetail chotGiaoThongDetail)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            foreach(NgaDuong nga in chotGiaoThongDetail.ngaDuongs)
+            {
+                foreach(CTDenGiaoThong ct in nga.cTDens)
+                {
+                    CTDenGiaoThong temp = db.CTDenGiaoThong.Find(ct.ma_ct_den);
+                    temp.vang = ct.vang;
+                    temp.xanh = ct.xanh;
+                    temp.do_ = ct.do_;
+                    db.Entry(temp).State = EntityState.Modified;
+                    try
+                    {
+                        db.SaveChanges();
+                    }
+                    catch (DbUpdateConcurrencyException)
+                    {
+                        if (db.CTDenGiaoThong.Count(e => e.ma_ct_den == temp.ma_ct_den) == 0)
+                        {
+              
+                            return NotFound();
+                        }
+                        else
+                        {
+                            throw;
+                        }
+                    }
+                }    
+            }
+            var kq = GetChotGTDetail(chotGiaoThongDetail.ngaDuongs[0].ma_chot_GT);
+            return kq;
+        }
+
 
     }
 }

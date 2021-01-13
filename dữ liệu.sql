@@ -11,6 +11,7 @@ insert into Duong (ten_duong) values (N'Nguyễn Trãi')
 insert into Duong (ten_duong) values (N'An Dương Vương')
 insert into Duong (ten_duong) values (N'Võ Văn Kiệt')
 
+
 insert into CT_Duong (ma_duong,phuong,quan) values (1,N'Phường 4',N'Quận 5')
 insert into CT_Duong (ma_duong,phuong,quan) values (1,N'Phường 3',N'Quận 5')
 insert into CT_Duong (ma_duong,phuong,quan) values (1,N'Phường 1',N'Quận 5')
@@ -102,9 +103,11 @@ insert into Camera (ip_,images,ma_nga_duong,ma_duong,stt) values ('192.168.1.11'
 
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (1,1)
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (4,1)
+insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (3,1)
 
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (1,3)
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (4,3)
+insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (3,3)
 
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (1,2)
 

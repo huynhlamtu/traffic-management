@@ -221,6 +221,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\DKGiaoThong\Index.cshtml" />
+    <Content Include="Views\DKGiaoThong\Index1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

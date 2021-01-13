@@ -17,5 +17,6 @@ namespace webAdmin.Models.DKGiaoThong
         public NgaDuong ngaDuong8 { set; get; }
         public NgaDuong ngaDuong9 { set; get; }
         public IEnumerable<Duongs> Duongs { set; get; }
+        public int ma_nga_duong { set; get; }
     }
 }
