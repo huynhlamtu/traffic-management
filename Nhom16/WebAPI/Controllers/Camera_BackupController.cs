@@ -24,6 +24,54 @@ namespace WebAPI.Controllers
             return db.Camera_Backup;
         }
 
+
+        [ResponseType(typeof(Camera_Backup))]
+        [Route("api/Camera_Backup/{TenDuong}")]
+        public IHttpActionResult GetCamera_Backup1(string TenDuong)
+        {
+
+            var camera_backup = (from ct in db.Camera_Backup where ct.TenDuong == TenDuong select ct).ToList();
+
+            if (camera_backup == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(camera_backup);
+        }
+
+        [ResponseType(typeof(Camera_Backup))]
+        public IHttpActionResult GetCamera_Backup2(DateTime thoi_gian)
+        {
+            string sql = "select * from Camera_Backup where  thoi_gian=" + thoi_gian;
+
+            var camera_backup = (from ct in db.Camera_Backup where ct.thoi_gian == thoi_gian select ct).ToList();
+            if (camera_backup == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(camera_backup);
+        }
+
+        [ResponseType(typeof(Camera_Backup))]
+        [Route("api/Camera_Backup/{TenDuong}/{thoi_gian}")]
+        public IHttpActionResult GetCamera_Backup3(string TenDuong, DateTime thoi_gian)
+        {
+            string sql = "select * from Camera_Backup where  thoi_gian=" + thoi_gian;
+
+            var camera_backup = (from ct in db.Camera_Backup where ct.thoi_gian == thoi_gian && ct.TenDuong == TenDuong select ct).ToList();
+            if (camera_backup == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(camera_backup);
+        }
+
+
+
+
         // GET: api/Camera_Backup/5
         [ResponseType(typeof(Camera_Backup))]
         public IHttpActionResult GetCamera_Backup(int id)

@@ -5,6 +5,9 @@ using System.Net.Http;
 using System.Web;
 using System.Web.Mvc;
 using WebTraCuuCamera.Models;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+
 
 namespace WebTraCuuCamera.Controllers
 {
@@ -14,7 +17,7 @@ namespace WebTraCuuCamera.Controllers
         [HttpGet]
         public ViewResult Index()
         {
-            IEnumerable<Camera_Backup> camera_backup = null;
+            List<Camera_Backup> List_Camera_Backup = new List<Camera_Backup>();
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri("https://localhost:44327/api/");
@@ -26,20 +29,46 @@ namespace WebTraCuuCamera.Controllers
                 {
                     var m = result.Content.ReadAsAsync<List<Camera_Backup>>();
                     m.Wait();
-                    camera_backup = m.Result;
+                    List_Camera_Backup = m.Result;
                 }
                 else
                 {
-                    camera_backup = Enumerable.Empty<Camera_Backup>();
+                    List_Camera_Backup.DefaultIfEmpty<Camera_Backup>();
                     ModelState.AddModelError(string.Empty, "Server error. Please contract admin for help");
-
                 }
 
             }
+            return View(List_Camera_Backup);
+        }
 
-            Thongtin thongtin = new Thongtin();
-            thongtin.Camera_Backup = camera_backup;
-            return View(thongtin);
+        [HttpGet]
+        public ActionResult TimKiemThongTin(string TenDuong, string thoi_gian)
+        {
+            List<Camera_Backup> List_Camera_Backup = new List<Camera_Backup>();
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:44327/api/");
+                var link = "Camera_Backup/" + TenDuong + "/" + thoi_gian;
+                var respornseTask = client.GetAsync(link);
+                respornseTask.Wait();
+
+                var result = respornseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var m = result.Content.ReadAsAsync<List<Camera_Backup>>();
+                    m.Wait();
+
+                    List_Camera_Backup = m.Result;
+                }
+                else
+                {
+                    List_Camera_Backup.DefaultIfEmpty<Camera_Backup>();
+                    ModelState.AddModelError(string.Empty, "Server error. Please contract admin for help");
+
+                }
+            }
+            return View(List_Camera_Backup);
         }
     }
 }

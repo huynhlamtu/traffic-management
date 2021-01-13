@@ -184,6 +184,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\TraCuuCamera\Index.cshtml" />
     <Content Include="Views\ViPhams\ViPhams.cshtml" />
+    <Content Include="Views\TraCuuCamera\TimKiemThongTin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
