@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "Tìm Kiếm Thống Tin";
 }
-
+@model IEnumerable<WebTraCuuCamera.Models.Camera_Backup>
 
 @using (Html.BeginForm("TimKiemThongTin", "TraCuuCamera", FormMethod.Get)) // -- phần thay đổi
 {

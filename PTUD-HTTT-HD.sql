@@ -84,6 +84,7 @@ create table Camera_Backup
 	thoi_gian date,
 	ma_camera int,
 	images Nvarchar(200),
+	TenDuong Nvarchar(200),
 
 	constraint fk_CameraBackup_Cameras foreign key (ma_camera) references Camera(ma_camera)
 )
@@ -223,7 +224,7 @@ create table ViPham
 	constraint fk_ViPhams_DonCongAns foreign key (noi_giam_giu_xe) references DonCongAn(ma_don_cong_an)
 )
 
-create table ViPhamLuats
+create table ViPhamLuat
 (
 	ma_vi_pham_luat int identity primary key,
 	ma_luat int,

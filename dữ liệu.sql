@@ -143,6 +143,15 @@ insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (4,13)
 
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (1,14)
 
+insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (1,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Võ Văn Kiệt')
+insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (2,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Nguyễn Văn Cừ')
+insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (3,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Võ Văn Kiệt')
+insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (4,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Võ Văn Kiệt')
+insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (5,'10/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Võ Văn Kiệt')
+insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (6,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Trần Hưng Đạo')
+
+
+
 INSERT into  [DonCongAn] ([ten_don_cong_an], [dia_chi]) VALUES (N'Không tạm giữ phương tiện', NULL)
 INSERT into  [DonCongAn] ([ten_don_cong_an], [dia_chi]) VALUES (N'Công an quận Bình Thạnh', N'152 Điện Biên Phủ, Bình Thạnh, TP HCM')
 INSERT into  [DonCongAn] ([ten_don_cong_an], [dia_chi]) VALUES (N'Công an quận 1', N'123/1 Trần Hung Đạo')
@@ -176,5 +185,7 @@ INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (3, 
 INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (1, 6, N'Không đội mũ bảo hiểm')
 INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (1, 7, N'Không đội mũ bảo hiểm')
 INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (2, 7, N'Vượt đèn đỏ')
+
+
 
 
