@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .ngaduong {
+            height: 300px;
+            border-style: solid;
+            border-width: 1px;
+            padding: 5px
+        }
+    </style>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Điều Khiển Giao Thông", "Index", "DieuKhienDenGiaoThong")</li>
+                    <li>@Html.ActionLink("Tìm thông tin video", "Index", "TraCuuCamera")</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+ @RenderBody()
+<script>
+    $(document).ready(function () {
+        $('.two').change(function () {
+            const id = this.id
+            const val = $(this).val()
+            if (val == 1) {
+                $('.two').val(2)
+                $('.' + id).val(1)
+            }
+        })
+        $('.eigth').change(function () {
+            const id = this.id
+            const val = $(this).val()
+            if (val == 1) {
+                $('.eigth').val(2)
+                $('.' + id).val(1)
+            }
+        })
+
+        $('.four').change(function () {
+            const id = this.id
+            const val = $(this).val()
+            if (val == 1) {
+                $('.four').val(2)
+                $('.' + id).val(1)
+            }
+        })
+        $('.six').change(function () {
+            const id = this.id
+            const val = $(this).val()
+            if (val == 1) {
+                $('.six').val(2)
+
+                $('.' + id).val(1)
+
+
+
+
+            }
+
+        })
+    })
+
+</script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("slide");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+
+    
+</body>
+</html>

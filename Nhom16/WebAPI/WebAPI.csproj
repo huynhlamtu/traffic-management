@@ -177,6 +177,7 @@
     <Compile Include="Controllers\DoiChuXesController.cs" />
     <Compile Include="Controllers\DonCongAnsController.cs" />
     <Compile Include="Controllers\DuongsController.cs" />
+    <Compile Include="Controllers\GetCameraByChotGTController.cs" />
     <Compile Include="Controllers\GetNameDuongByMaCTDuongController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LuatsController.cs" />

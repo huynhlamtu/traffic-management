@@ -40,3 +40,7 @@ E:\SLIDE\PTUD HTTT HD\traffic-management\Nhom16\DataRepository\obj\Debug\DataRep
 E:\SLIDE\PTUD HTTT HD\traffic-management\Nhom16\DataRepository\obj\Debug\DataRepository.csproj.CopyComplete
 E:\SLIDE\PTUD HTTT HD\traffic-management\Nhom16\DataRepository\obj\Debug\DataRepository.dll
 E:\SLIDE\PTUD HTTT HD\traffic-management\Nhom16\DataRepository\obj\Debug\DataRepository.pdb
+E:\SLIDE\PTUD HTTT HD\traffic-management\Nhom16\DataRepository\bin\Debug\Newtonsoft.Json.dll
+E:\SLIDE\PTUD HTTT HD\traffic-management\Nhom16\DataRepository\bin\Debug\System.Net.Http.Formatting.dll
+E:\SLIDE\PTUD HTTT HD\traffic-management\Nhom16\DataRepository\bin\Debug\Newtonsoft.Json.xml
+E:\SLIDE\PTUD HTTT HD\traffic-management\Nhom16\DataRepository\bin\Debug\System.Net.Http.Formatting.xml

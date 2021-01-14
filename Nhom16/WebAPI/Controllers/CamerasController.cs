@@ -37,6 +37,8 @@ namespace WebAPI.Controllers
             return Ok(camera);
         }
 
+        
+
         // PUT: api/Cameras/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutCamera(int id, Camera camera)

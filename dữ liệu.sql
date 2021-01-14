@@ -102,11 +102,9 @@ insert into Camera (ip_,images,ma_nga_duong,ma_duong,stt) values ('192.168.1.11'
 
 
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (1,1)
-insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (4,1)
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (3,1)
 
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (1,3)
-insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (4,3)
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (3,3)
 
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (1,2)
@@ -122,12 +120,20 @@ insert into CTDenGiaoThong(ma_den,ma_nga_duong) values (1,7)
 
 --
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (1,8)
+insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (3,8)
+insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (6,8)
 
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (1,9)
+insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (3,9)
+insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (6,9)
 
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (1,10)
+insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (3,10)
+insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (6,10)
 
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (1,11)
+insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (3,11)
+insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (6,11)
 
 --
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (1,12)

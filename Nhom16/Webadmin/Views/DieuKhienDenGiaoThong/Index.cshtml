@@ -1,0 +1,380 @@
+﻿@{
+    ViewBag.Title = "Quản Lý Giao Thông";
+}
+
+<div style="text-align:center"><h2>Điều Khiển Giao Thông</h2></div>
+
+
+<div style=" margin-top:10px" class="container">
+    <form class="form-inline" style="margin-top: 30px" method="post" action="/DieuKhienDenGiaoThong/Index">
+        <span style="margin-right:10px"><b>Chốt Đường: </b></span>
+        <select name="duong1" id="duong1">
+
+            @foreach (var duong in Model.Duongs)
+            {
+                <option value="@duong.ten_duong">@duong.ten_duong</option>
+            }
+
+        </select>
+        <span style="margin-left:5px;margin-right:5px;">Giao với</span>
+        <select name="duong2" id="duong2">
+
+            @foreach (var duong in Model.Duongs)
+            {
+                <option value="@duong.ten_duong">@duong.ten_duong</option>
+            }
+
+
+        </select>
+        <button type="submit" class="btn btn-primary" style="margin-left:10px">Submit</button>
+    </form>
+    @if (Model.mes != null)
+    {
+        <p style="color:red">@Model.mes</p>
+    }
+</div>
+<section style="margin-top:15px;">
+    <form method="post" action="/DieuKhienDenGiaoThong/Index1">
+        <input value="@Model.ma_nga_duong" name="ma_nga_duong" hidden />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 col-md-4">
+                    <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
+                        @if (Model.ngaDuong1 != null)
+                        {
+                            <div style="text-align:center"><B style="font-size:20px">@Model.ngaDuong1.tenDuong</B></div>
+                            <div class="container" style="margin-top:20px;width: initial; ">
+                                <div class="row" style="width: initial">
+
+                                    @foreach (var den in Model.ngaDuong1.cTDens)
+                                    {
+                                        <img alt="@den.link" style="width:20px; height:20px" />
+                                        <div class="col-xs-6 col-md-6 row" style="margin-top:10px">
+                                            <select name="duong1" id="@den.ma_ct_den" class="one @den.ma_ct_den">
+                                                @if (den.xanh == 1)
+                                                {
+                                                    <option value="1">Xanh</option>
+                                                    <option value="2">Đỏ</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="2">Đỏ</option>
+                                                    <option value="1">Xanh</option>
+
+                                                }
+
+                                            </select>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
+                        @if (Model.ngaDuong2 != null)
+                        {
+                            <div style="text-align:center"><B style="font-size:20px">@Model.ngaDuong2.tenDuong</B></div>
+                            <div class="container" style="margin-top:20px;width: initial; ">
+                                <div class="row" style="width: initial">
+
+                                    @foreach (var den in Model.ngaDuong2.cTDens)
+                                    {
+                                        string name2 = "duong2" + den.ma_den;
+                                        <div class="col-xs-6 col-md-6 row" style="margin-top:10px; ">
+                                            <img src="@den.link" style="width:50px; height:50px" />
+                                            <select name="@name2" id="@den.ma_ct_den" class="two @den.ma_ct_den" style="margin-left: 10px;">
+                                                @if (den.xanh == 1)
+                                                {
+                                                    <option value="1">Xanh</option>
+                                                    <option value="2">Đỏ</option>
+
+                                                }
+                                                else
+                                                {
+                                                    <option value="2">Đỏ</option>
+                                                    <option value="1">Xanh</option>
+
+                                                }
+
+
+
+
+                                            </select>
+                                        </div>
+
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+
+                </div>
+                <div class="col-xs-4 col-md-4 ">
+                    <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
+                        @if (Model.ngaDuong3 != null)
+                        {
+                            <div style="text-align:center"><B style="font-size:20px">@Model.ngaDuong3.tenDuong</B></div>
+                            <div class="container" style="margin-top:20px;width: initial; ">
+                                <div class="row" style="width: initial">
+
+                                    @foreach (var den in Model.ngaDuong3.cTDens)
+                                    {
+                                        string name3 = "duong3" + den.ma_den;
+                                        <div class="col-xs-6 col-md-6 row" style="margin-top:10px">
+                                            <img src="@den.link" style="width:50px; height:50px" />
+                                            <select name="@name3" id="@den.ma_ct_den" class="three @den.ma_ct_den" style="margin-left: 10px;">
+                                                @if (den.xanh == 1)
+                                                {
+                                                    <option value="1">Xanh</option>
+                                                    <option value="2">Đỏ</option>
+
+                                                }
+                                                else
+                                                {
+                                                    <option value="2">Đỏ</option>
+                                                    <option value="1">Xanh</option>
+
+                                                }
+
+                                            </select>
+                                        </div>
+
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
+                        @if (Model.ngaDuong4 != null)
+                        {
+                            <div style="text-align:center"><B style="font-size:20px">@Model.ngaDuong4.tenDuong</B></div>
+                            <div class="container" style="margin-top:20px;width: initial; ">
+                                <div class="row" style="width: initial">
+
+                                    @foreach (var den in Model.ngaDuong4.cTDens)
+                                    {
+                                        string name4 = "duong4" + den.ma_den;
+                                        <div class="col-xs-6 col-md-6 row" style="margin-top:10px">
+                                            <img src="@den.link" style="width:50px; height:50px" />
+                                            <select name="@name4" id="@den.ma_ct_den" class="four @den.ma_ct_den" style="margin-left: 10px;">
+                                                @if (den.xanh == 1)
+                                                {
+                                                    <option value="1">Xanh</option>
+                                                    <option value="2">Đỏ</option>
+
+                                                }
+                                                else
+                                                {
+                                                    <option value="2">Đỏ</option>
+                                                    <option value="1">Xanh</option>
+
+                                                }
+
+                                            </select>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4 ">
+                    <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
+                        <div style="text-align:center">
+                            <B style="font-size:40px">Phần Điều Kiển</B>
+
+                            <div class="form-check" style="text-align:left">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="DieuKhien">
+                                <label class="form-check-label" for="exampleCheck1">Bật điều Kiển Bằng Tay</label>
+                            </div>
+                            <div class="form-check" style="text-align:left">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="UseScrip">
+                                <label class="form-check-label" for="exampleCheck1">Khi Chọn Đèn Xanh Thi tất cả đèn còn lại đỏ</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="margin-left:10px">Áp Dụng</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
+                        @if (Model.ngaDuong6 != null)
+                        {
+                            <div style="text-align:center"><B style="font-size:20px">@Model.ngaDuong6.tenDuong</B></div>
+                            <div class="container" style="margin-top:20px;width: initial; ">
+                                <div class="row" style="width: initial">
+
+                                    @foreach (var den in Model.ngaDuong6.cTDens)
+                                    {
+                                        string name6 = "duong6" + den.ma_den;
+                                        <div class="col-xs-6 col-md-6 row" style="margin-top:10px">
+                                            <img src="@den.link" style="width:50px; height:50px" />
+                                            <select name="@name6" id="@den.ma_ct_den" class="six @den.ma_ct_den" style="margin-left: 10px;">
+                                                @if (den.xanh == 1)
+                                                {
+                                                    <option value="1">Xanh</option>
+                                                    <option value="2">Đỏ</option>
+
+                                                }
+                                                else
+                                                {
+                                                    <option value="2">Đỏ</option>
+                                                    <option value="1">Xanh</option>
+
+                                                }
+
+                                            </select>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4 ">
+                    <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
+                        @if (Model.ngaDuong7 != null)
+                        {
+                            <div style="text-align:center"><B style="font-size:20px">@Model.ngaDuong7.tenDuong</B></div>
+                            <div class="container" style="margin-top:20px;width: initial; ">
+                                <div class="row" style="width: initial">
+
+                                    @foreach (var den in Model.ngaDuong7.cTDens)
+                                    {
+                                        <div class="col-xs-6 col-md-6 row" style="margin-top:10px">
+                                            <img src="@den.link" style="width:50px; height:50px" />
+                                            <select name="duong1" id="@den.ma_ct_den" class="seven @den.ma_ct_den" style="margin-left: 10px;">
+                                                @if (den.xanh == 1)
+                                                {
+                                                    <option value="1">Xanh</option>
+                                                    <option value="2">Đỏ</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="2">Đỏ</option>
+                                                    <option value="1">Xanh</option>
+
+                                                }
+
+                                            </select>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4 ">
+                    <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
+                        @if (Model.ngaDuong8 != null)
+                        {
+                            <div style="text-align:center"><B style="font-size:20px">@Model.ngaDuong8.tenDuong</B></div>
+                            <div class="container" style="margin-top:20px;width: initial; ">
+                                <div class="row" style="width: initial">
+
+                                    @foreach (var den in Model.ngaDuong8.cTDens)
+                                    {
+                                        string name8 = "duong8" + den.ma_den;
+                                        <div class="col-xs-6 col-md-6 row" style="margin-top:10px">
+                                            <img src="@den.link" style="width:50px; height:50px" />
+                                            <select name="@name8" id="@den.ma_ct_den" class="eigth @den.ma_ct_den" style="margin-left: 10px;">
+                                                @if (den.xanh == 1)
+                                                {
+                                                    <option value="1">Xanh</option>
+                                                    <option value="2">Đỏ</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="2">Đỏ</option>
+                                                    <option value="1">Xanh</option>
+
+                                                }
+
+                                            </select>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+
+
+                        }
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4 ">
+                    <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
+                        @if (Model.ngaDuong9 != null)
+                        {
+                            <div style="text-align:center"><B style="font-size:20px">@Model.ngaDuong9.tenDuong</B></div>
+
+                            <div class="container" style="margin-top:20px;width: initial; ">
+                                <div class="row" style="width: initial">
+
+                                    @foreach (var den in Model.ngaDuong9.cTDens)
+                                    {
+                                        string name9 = "duong9" + den.ma_den;
+                                        <div class="col-xs-6 col-md-6 row" style="margin-top:10px">
+                                            <img src="@den.link" style="width:50px; height:50px" />
+                                            <select name="@name9" id="@den.ma_ct_den" class="nine @den.ma_ct_den" style="margin-left: 10px;">
+                                                @if (den.xanh == 1)
+                                                {
+                                                    <option value="1">Xanh</option>
+                                                    <option value="2">Đỏ</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="2">Đỏ</option>
+                                                    <option value="1">Xanh</option>
+
+                                                }
+
+                                            </select>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    <div style="margin-top:30px;padding-bottom:50px; text-align:center">
+        <h3>Camera</h3>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                @if (Model.Cameras != null)
+                {
+                    foreach (var item in Model.Cameras)
+                    {
+                        <div class="carousel-item @item.fisrt">
+                            <img class="d-block w-100" src="@item.images" alt="First slide" style="width:auto;height:500px">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Ngã Thứ @item.tenNga</h5>
+
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+   
+</section>
+
