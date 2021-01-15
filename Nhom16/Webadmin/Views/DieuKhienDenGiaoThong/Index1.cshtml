@@ -193,10 +193,23 @@
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1" name="DieuKhien">
                                 <label class="form-check-label" for="exampleCheck1">Bật điều Kiển Bằng Tay</label>
                             </div>
-                            <div class="form-check" style="text-align:left">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="UseScrip">
-                                <label class="form-check-label" for="exampleCheck1">Khi Chọn Đèn Xanh Thi tất cả đèn còn lại đỏ</label>
-                            </div>
+                            @if (Model.useScrip == 1)
+                            {
+
+                                <div class="form-check" style="text-align:left">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="UseScrip" checked>
+                                    <label class="form-check-label" for="exampleCheck1">Khi Chọn Đèn Xanh Thi tất cả đèn còn lại đỏ</label>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="form-check" style="text-align:left">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="UseScrip">
+                                    <label class="form-check-label" for="exampleCheck1">Khi Chọn Đèn Xanh Thi tất cả đèn còn lại đỏ</label>
+                                </div>
+                            }
+
+
 
                             <button type="submit" class="btn btn-primary" style="margin-left:10px">Áp Dụng</button>
 
@@ -377,4 +390,53 @@
     </div>
 
 </section>
+
+@if (Model.useScrip == 1)
+{
+    <script>
+        $(document).ready(function () {
+            $('.two').change(function () {
+                const id = this.id
+                const val = $(this).val()
+                if (val == 1) {
+                    $('.two').val(2)
+                    $('.' + id).val(1)
+                }
+            })
+            $('.eigth').change(function () {
+                const id = this.id
+                const val = $(this).val()
+                if (val == 1) {
+                    $('.eigth').val(2)
+                    $('.' + id).val(1)
+                }
+            })
+
+            $('.four').change(function () {
+                const id = this.id
+                const val = $(this).val()
+                if (val == 1) {
+                    $('.four').val(2)
+                    $('.' + id).val(1)
+                }
+            })
+            $('.six').change(function () {
+                const id = this.id
+                const val = $(this).val()    
+                if (val == 1) {
+                    $('.six').val(2)
+
+                    $('.' + id).val(1)
+
+
+
+
+                }
+
+            })
+        })
+
+    </script>
+}
+}
 
