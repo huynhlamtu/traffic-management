@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="App1.UtilsPages.TraCuuLuatPages.ListLuat"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label HorizontalOptions="Center" Text="TIM KIEM LUAT " />
+
+            <SearchBar
+                CancelButtonColor="Orange"
+                FontAttributes="Italic"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Placeholder="Nhap ten luat can tim..."
+                PlaceholderColor="Orange"
+                TextColor="Orange" />
+
+            <ListView
+                x:Name="listViewLuat"
+                BackgroundColor="BlueViolet"
+                HasUnevenRows="True"
+                ItemSelected="OnListViewItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="5,10">
+                                <Label
+                                    FontSize="Medium"
+                                    Text="{Binding ma_luat}"
+                                    TextColor="White" />
+                
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
