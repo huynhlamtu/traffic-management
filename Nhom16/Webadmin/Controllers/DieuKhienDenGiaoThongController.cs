@@ -30,7 +30,6 @@ namespace Webadmin.Controllers
                 else
                 {
                     duong = Enumerable.Empty<Duongs>();
-
                     ModelState.AddModelError(string.Empty, "Server error. Please contract admin for help");
 
                 }
@@ -495,8 +494,5 @@ namespace Webadmin.Controllers
             return duongs.ten_duong;
         }
 
-
     }
-
-    
 }

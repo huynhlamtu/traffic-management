@@ -35,12 +35,6 @@
     <EmbeddedResource Update="UtilsPages\NopPhatPages\XacNhanNopPhat.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="UtilsPages\TraCuuLuatPages\ListLuat.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="UtilsPages\TraCuuLuatPages\LuatDetail.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="UtilsPages\ViPhamPages\ListViPham.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

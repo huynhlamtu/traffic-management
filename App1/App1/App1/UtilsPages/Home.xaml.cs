@@ -10,7 +10,6 @@ using Xamarin.Forms.Xaml;
 using App1.Data;
 using App1.UtilsPages.ViPhamPage;
 using App1.UtilsPages.NopPhatPages;
-using App1.UtilsPages.TraCuuLuatPages;
 
 namespace App1.UtilsPages
 {
@@ -47,11 +46,6 @@ namespace App1.UtilsPages
 
         void funcHandleSignOut(object sender, EventArgs e)
         {
-        }
-        
-        void funcHandleTraCuuLuat(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new ListLuat { });
         }
     }
 }

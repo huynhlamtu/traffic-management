@@ -1,77 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="App1.UtilsPages.Home"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
-    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <!--  Place new controls here  -->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.UtilsPages.Home">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <!-- Place new controls here -->
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label
-                x:Name="userName"
-                FontSize="Medium"
-                HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center" />
-            <Button
-                Grid.Column="2"
-                Clicked="funcHandleSignOut"
-                Text="Dang xuat" />
+            <Label x:Name="userName" FontSize="Medium" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Button Text="Dang xuat" Clicked="funcHandleSignOut"  Grid.Column="2"/>
         </Grid>
-
-        <StackLayout
-            Margin="0,15,0,0"
-            HorizontalOptions="Center"
-            Orientation="Horizontal" />
-        <StackLayout Margin="0,50" Padding="0">
-            <Frame
-                BackgroundColor="LightPink"
-                HeightRequest="390"
-                HorizontalOptions="FillAndExpand">
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,15,0,0">
+        </StackLayout>
+        <StackLayout Padding="0" Margin="0,50">
+            <Frame BackgroundColor="LightPink" HeightRequest="390" HorizontalOptions="FillAndExpand">
                 <StackLayout Margin="20,20">
-                    <Button
-                        Margin="0,15,0,0"
-                        BackgroundColor="Purple"
-                        Clicked="funcHandleNopPhat"
-                        CornerRadius="30"
-                        FontAttributes="Bold"
-                        Text="Nop phat"
-                        TextColor="White" />
-                    <Button
-                        Margin="0,15,0,0"
-                        BackgroundColor="Purple"
-                        Clicked="funcHandleXemViPham"
-                        CornerRadius="30"
-                        FontAttributes="Bold"
-                        Text="Tra cuu vi pham"
-                        TextColor="White" />
-                    <Button
-                        Margin="0,15,0,0"
-                        BackgroundColor="Purple"
-                        Clicked="funcHandleTraCuuLuat"
-                        CornerRadius="30"
-                        FontAttributes="Bold"
-                        Text="Tra cuu luat"
-                        TextColor="White" />
-                    <Button
-                        Margin="0,15,0,0"
-                        BackgroundColor="Purple"
-                        CornerRadius="30"
-                        FontAttributes="Bold"
-                        Text="Dang ky xe"
-                        TextColor="White" />
-                    <Button
-                        Margin="0,15,0,0"
-                        BackgroundColor="Purple"
-                        CornerRadius="30"
-                        FontAttributes="Bold"
-                        Text="Chuyen nhuong xe"
-                        TextColor="White" />
+                    <Button Text="Nop phat" BackgroundColor="Purple" TextColor="White" Margin="0,15,0,0" FontAttributes="Bold" CornerRadius="30" Clicked="funcHandleNopPhat"/>
+                    <Button Text="Tra cuu vi pham" BackgroundColor="Purple" TextColor="White" Margin="0,15,0,0" FontAttributes="Bold" CornerRadius="30" Clicked="funcHandleXemViPham"/>
+                    <Button Text="Tra cuu luat" BackgroundColor="Purple" TextColor="White" Margin="0,15,0,0" FontAttributes="Bold" CornerRadius="30"/>
+                    <Button Text="Dang ky xe" BackgroundColor="Purple" TextColor="White" Margin="0,15,0,0" FontAttributes="Bold" CornerRadius="30"/>
+                    <Button Text="Chuyen nhuong xe" BackgroundColor="Purple" TextColor="White" Margin="0,15,0,0" FontAttributes="Bold" CornerRadius="30"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

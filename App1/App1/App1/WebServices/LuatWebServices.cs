@@ -11,7 +11,7 @@ namespace App1.WebServices
 {
     class LuatWebServices
     {
-        private string uri = "http://192.168.1.155/api/Luats";
+        private string uri = "http://192.168.1.6/api/Luats";
         public LuatWebServices()
         {
 

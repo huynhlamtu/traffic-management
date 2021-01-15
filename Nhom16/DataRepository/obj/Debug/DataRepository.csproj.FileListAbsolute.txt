@@ -44,21 +44,3 @@ E:\SLIDE\PTUD HTTT HD\traffic-management\Nhom16\DataRepository\bin\Debug\Newtons
 E:\SLIDE\PTUD HTTT HD\traffic-management\Nhom16\DataRepository\bin\Debug\System.Net.Http.Formatting.dll
 E:\SLIDE\PTUD HTTT HD\traffic-management\Nhom16\DataRepository\bin\Debug\Newtonsoft.Json.xml
 E:\SLIDE\PTUD HTTT HD\traffic-management\Nhom16\DataRepository\bin\Debug\System.Net.Http.Formatting.xml
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\bin\Debug\DataRepository.dll.config
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\bin\Debug\DataRepository.dll
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\bin\Debug\DataRepository.pdb
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\bin\Debug\EntityFramework.dll
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\bin\Debug\Newtonsoft.Json.dll
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\bin\Debug\System.Net.Http.Formatting.dll
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\bin\Debug\EntityFramework.xml
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\bin\Debug\Newtonsoft.Json.xml
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\bin\Debug\System.Net.Http.Formatting.xml
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\obj\Debug\DataRepository.csprojAssemblyReference.cache
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\obj\Debug\DataRepository.Migrations.initial.resources
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\obj\Debug\DataRepository.csproj.GenerateResource.cache
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\obj\Debug\DataRepository.csproj.CoreCompileInputs.cache
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\obj\Debug\DataRepository.csproj.CopyComplete
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\obj\Debug\DataRepository.dll
-C:\Users\WIN10\Desktop\traffic-management\Nhom16\DataRepository\obj\Debug\DataRepository.pdb

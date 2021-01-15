@@ -36,20 +36,7 @@ namespace WebAPI.Controllers
 
             return Ok(cT_Duong);
         }
-        [ResponseType(typeof(CT_Duong))]
-        [Route("api/CT_Duong/{TenDuong}")]
-        public IHttpActionResult GetCT_DuongName(string TenDuong)
-        {
-            List<Duong> duong = (from ct in db.Duong where ct.ten_duong == TenDuong select ct).ToList();
-            int ma_duong1 = duong[0].ma_duong;
-            List<CT_Duong> cT_Duong = (from ct1 in db.CT_Duong where ct1.ma_duong == ma_duong1 select ct1).ToList();
-            if (cT_Duong == null)
-            {
-                return NotFound();
-            }
 
-            return Ok(cT_Duong);
-        }
         // PUT: api/CT_Duong/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutCT_Duong(int id, CT_Duong cT_Duong)
