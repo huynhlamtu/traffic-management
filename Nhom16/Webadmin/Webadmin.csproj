@@ -133,6 +133,7 @@
     <Compile Include="Controllers\DieuKhienDenGiaoThongController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TraCuuCameraController.cs" />
+    <Compile Include="Controllers\TraCuuChiTietDuong.cs" />
     <Compile Include="Controllers\ViPhamsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -146,6 +147,8 @@
     <Compile Include="Models\DKDen\Duongs.cs" />
     <Compile Include="Models\DKDen\NgaDuong.cs" />
     <Compile Include="Models\DKDen\viewDKChotGT.cs" />
+    <Compile Include="Models\QL\CT_Duong.cs" />
+    <Compile Include="Models\QL\Duongs.cs" />
     <Compile Include="Models\Thongtin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -188,6 +191,8 @@
     <Content Include="Views\TraCuuCamera\Index.cshtml" />
     <Content Include="Views\TraCuuCamera\TimKiemThongTin.cshtml" />
     <Content Include="Views\ViPhams\ViPhams.cshtml" />
+    <Content Include="Views\TraCuuChiTietDuong\TimKiemThongTinDuong.cshtml" />
+    <Content Include="Views\TraCuuChiTietDuong\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
