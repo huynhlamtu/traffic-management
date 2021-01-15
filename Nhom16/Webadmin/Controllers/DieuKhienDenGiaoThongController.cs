@@ -146,6 +146,7 @@ namespace Webadmin.Controllers
         public ActionResult Index1(FormCollection ten_chotGT)
         {
             viewDKChotGT chotGiaoThongDetail = new viewDKChotGT();
+            
             var temp = ten_chotGT.Get("ma_nga_duong").ToString();
             int a = Int32.Parse(temp);
             ChotGiaoThongDetail chotdetail = null;
@@ -264,8 +265,9 @@ namespace Webadmin.Controllers
                 chotGiaoThongDetail = GetDKChotGT(a);
             }
 
-
+                
             chotGiaoThongDetail = GetDKChotGT(a);
+           
             return View(chotGiaoThongDetail);
         }
 

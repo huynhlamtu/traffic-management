@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XamlProjectMeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Files>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Asus\Desktop\traffic-management\App1\App1\App1\App.xaml</FilePath>
+      <Hash>9F-88-00-36-56-6A-1A-01-56-36-38-48-C4-06-5F-2F</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Asus\Desktop\traffic-management\App1\App1\App1\MainPage.xaml</FilePath>
+      <Hash>F0-82-20-19-BD-04-96-CD-24-90-E0-E0-22-EE-44-71</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Asus\Desktop\traffic-management\App1\App1\App1\UtilsPages\Home.xaml</FilePath>
+      <Hash>A5-91-81-45-70-F6-2E-54-65-BF-AD-56-52-1C-0C-8E</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Asus\Desktop\traffic-management\App1\App1\App1\UtilsPages\NopPhatPages\ListChuaNopPhat.xaml</FilePath>
+      <Hash>3B-23-BB-8A-3E-85-34-28-BF-88-15-AF-47-6B-A8-FD</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Asus\Desktop\traffic-management\App1\App1\App1\UtilsPages\NopPhatPages\NopPhat.xaml</FilePath>
+      <Hash>7D-2B-8C-D1-81-0E-BB-AC-44-86-DD-03-EB-2A-EF-42</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Asus\Desktop\traffic-management\App1\App1\App1\UtilsPages\NopPhatPages\XacNhanNopPhat.xaml</FilePath>
+      <Hash>87-7F-9A-A4-28-C7-87-8D-EF-06-86-EB-FD-54-26-E6</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Asus\Desktop\traffic-management\App1\App1\App1\UtilsPages\ViPhamPages\ListViPham.xaml</FilePath>
+      <Hash>AD-83-3C-0E-61-AE-62-19-C0-28-3F-42-3A-84-99-3F</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Asus\Desktop\traffic-management\App1\App1\App1\UtilsPages\ViPhamPages\ViPhamDetail.xaml</FilePath>
+      <Hash>40-1F-4B-17-AA-F8-6D-B3-77-28-AF-BE-17-61-7C-4E</Hash>
+      <Properties />
+    </XamlFileMeta>
+  </Files>
+</XamlProjectMeta>
