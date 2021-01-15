@@ -34,78 +34,18 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Điều Khiển Giao Thông", "Index", "DieuKhienDenGiaoThong")</li>
                     <li>@Html.ActionLink("Tìm thông tin video", "Index", "TraCuuCamera")</li>
-                    
+
                 </ul>
             </div>
         </div>
     </div>
 
- @RenderBody()
-<script>
-    $(document).ready(function () {
-        $('.two').change(function () {
-            const id = this.id
-            const val = $(this).val()
-            if (val == 1) {
-                $('.two').val(2)
-                $('.' + id).val(1)
-            }
-        })
-        $('.eigth').change(function () {
-            const id = this.id
-            const val = $(this).val()
-            if (val == 1) {
-                $('.eigth').val(2)
-                $('.' + id).val(1)
-            }
-        })
-
-        $('.four').change(function () {
-            const id = this.id
-            const val = $(this).val()
-            if (val == 1) {
-                $('.four').val(2)
-                $('.' + id).val(1)
-            }
-        })
-        $('.six').change(function () {
-            const id = this.id
-            const val = $(this).val()
-            if (val == 1) {
-                $('.six').val(2)
-
-                $('.' + id).val(1)
+    @RenderBody()
+   
+    }
+        
 
 
 
-
-            }
-
-        })
-    })
-
-</script>
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("slide");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length };
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
-    </script>
-
-
-    
-</body>
+    </body>
 </html>

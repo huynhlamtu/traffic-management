@@ -1,8 +1,8 @@
 use master
 go
-create database QuanLyGiaoThong
+create database QuanLyGiaoThong1
 go
-use QuanLyGiaoThong
+use QuanLyGiaoThong1
 go
 create table DenGiaoThong
 (
@@ -206,17 +206,17 @@ create table DoiChuXe
 
 create table ViPham
 (
-	ma_vi_pham int identity primary key,
-	nguoi_vi_pham int,
-	nguoi_xu_phat int,
-	xe_vi_pham Nvarchar(20),
-	[dia_diem_vi_pham] [nvarchar](50),
-	tien_phat_them int,
-	tong_tien_phat int,
-	thoi_gian_vi_pham datetime,
-	thoi_gian_xu_phat datetime,
-	noi_giam_giu_xe int,
-	flag_da_nop_phat bit
+	[ma_vi_pham] [int] IDENTITY(1,1) primary key,
+	[nguoi_vi_pham] [int] NOT NULL,
+	[nguoi_xu_phat] [int] NOT NULL,
+	[xe_vi_pham] [nvarchar](20) NOT NULL,
+	[dia_diem_vi_pham] [nvarchar](50) NOT NULL,
+	[tien_phat_them] [int] NOT NULL,
+	[tong_tien_phat] [int] NOT NULL,
+	[thoi_gian_vi_pham] [datetime] NOT NULL,
+	[thoi_gian_xu_phat] [datetime] NOT NULL,
+	[noi_giam_giu_xe] [int] NULL,
+	[flag_da_nop_phat] [tinyint] NOT NULL,
 
 	constraint fk_ViPhams_Dans foreign key (nguoi_vi_pham) references Dan(ma_dan),
 	constraint fk_ViPhams_CongAns foreign key (nguoi_xu_phat) references CongAn(ma_cong_an),
@@ -226,10 +226,10 @@ create table ViPham
 
 create table ViPhamLuat
 (
-	ma_vi_pham_luat int identity primary key,
-	ma_luat int,
-	ma_vi_pham int,
-	mo_ta_vi_pham Nvarchar(100)
+	[ma_vi_pham_luat] [int] IDENTITY(1,1) primary key,
+	[ma_luat] [int] NULL,
+	[ma_vi_pham] [int] NULL,
+	[mo_ta_vi_pham] [nvarchar](100) NULL,
 
 	constraint fk_ViPhamLuats_Luats foreign key (ma_luat) references Luat(ma_luat),
 	constraint fk_ViPhamLuats_ViPhams foreign key (ma_vi_pham) references ViPham(ma_vi_pham)
@@ -237,7 +237,7 @@ create table ViPhamLuat
 
 create table PhieuNopPhat
 (
-	[ma_phieu] [int] IDENTITY(1,1) NOT NULL,
+	[ma_phieu] [int] IDENTITY(1,1) primary key,
 	[ma_vi_pham] [int] NULL,
 	[tien_phat] [int] NULL,
 	[tien_ship] [int] NULL,

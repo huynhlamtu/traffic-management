@@ -143,15 +143,6 @@ insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (4,13)
 
 insert into CTDenGiaoThong (ma_den,ma_nga_duong) values (1,14)
 
-insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (1,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Võ Văn Kiệt')
-insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (2,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Nguyễn Văn Cừ')
-insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (3,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Võ Văn Kiệt')
-insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (4,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Võ Văn Kiệt')
-insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (5,'10/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Võ Văn Kiệt')
-insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (6,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Trần Hưng Đạo')
-
-
-
 INSERT into  [DonCongAn] ([ten_don_cong_an], [dia_chi]) VALUES (N'Không tạm giữ phương tiện', NULL)
 INSERT into  [DonCongAn] ([ten_don_cong_an], [dia_chi]) VALUES (N'Công an quận Bình Thạnh', N'152 Điện Biên Phủ, Bình Thạnh, TP HCM')
 INSERT into  [DonCongAn] ([ten_don_cong_an], [dia_chi]) VALUES (N'Công an quận 1', N'123/1 Trần Hung Đạo')
@@ -162,6 +153,9 @@ INSERT into  [CongAn] ([email], [pass_word], [ho_ten], [dia_chi], [sdt], [cmnd],
 INSERT into  [Dan] ([email], [pass_word], [ho_ten], [dia_chi], [sdt], [cmnd], [ngaysinh], [gioi_tinh]) VALUES (N'chanestdevil@gmail.com', N'123', N'Huỳnh Lâm Tứ', N'Quận 2, TP HCM', N'0912327121', N'52272329229', CAST(N'1999-05-19' AS Date), N'nam')
 INSERT into  [Dan] ([email], [pass_word], [ho_ten], [dia_chi], [sdt], [cmnd], [ngaysinh], [gioi_tinh]) VALUES (N'chunam47@gmail.com', N'123', N'Chu Văn Nam', N'Bình Thạnh, TP HCM', N'0911229212', N'52262324232', CAST(N'1999-02-13' AS Date), N'nam')
 INSERT into  [Dan] ([email], [pass_word], [ho_ten], [dia_chi], [sdt], [cmnd], [ngaysinh], [gioi_tinh]) VALUES (N'nguyenhoang@gmail.com', N'123', N'Nguyễn Văn Hoàng', N'Gò Vấp, TP HCM', N'0918138144', N'52273482242', CAST(N'1999-09-14' AS Date), N'nam')
+
+INSERT [Xe] ([bien_so_xe], [chu_xe], [nhan_hieu], [mau_sac], [so_khung], [loai_phuong_tien], [so_may], [kich_thuoc_bao], [kich_thuoc_thung_hang], [khoi_luong_xe], [khoi_luong_cho_phep], [so_nguoi_cho_phep], [khoi_luong_toan_bo_cho_phep], [don_vi_kiem_dinh], [ngay_kiem_dinh], [so_ten_GCN], [hinh_anh_xe]) VALUES (N'47E1-34312', 1, N'Sirius', N'Đen', N'S40-23-2DF-F3', N'Xe moto', N'2819223', 100, 100, 100, 150, 2, 150, 1, CAST(N'2020-12-14T00:00:00.000' AS DateTime), N'23401280', N'url')
+INSERT [Xe] ([bien_so_xe], [chu_xe], [nhan_hieu], [mau_sac], [so_khung], [loai_phuong_tien], [so_may], [kich_thuoc_bao], [kich_thuoc_thung_hang], [khoi_luong_xe], [khoi_luong_cho_phep], [so_nguoi_cho_phep], [khoi_luong_toan_bo_cho_phep], [don_vi_kiem_dinh], [ngay_kiem_dinh], [so_ten_GCN], [hinh_anh_xe]) VALUES (N'72B2-64311', 2, N'Yamaha', N'Bạc', N'FK1-15-5BS-G6', N'Xe moto', N'4234523', 120, 120, 100, 180, 2, 170, 2, CAST(N'2019-09-12T00:00:00.000' AS DateTime), N'53512421', N'url')
 
 INSERT into  [ViPham] ([nguoi_vi_pham], [nguoi_xu_phat], [xe_vi_pham], [dia_diem_vi_pham], [tien_phat_them], [tong_tien_phat], [thoi_gian_vi_pham], [thoi_gian_xu_phat], [noi_giam_giu_xe], [flag_da_nop_phat]) VALUES (1, 2, N'47E1-34312', N'32 Trường Chinh, Tân Phú', 50000, 450000, CAST(N'2020-11-11T11:40:00.000' AS DateTime), CAST(N'2020-11-11T12:00:00.000' AS DateTime), 1, 1)
 INSERT into  [ViPham] ([nguoi_vi_pham], [nguoi_xu_phat], [xe_vi_pham], [dia_diem_vi_pham], [tien_phat_them], [tong_tien_phat], [thoi_gian_vi_pham], [thoi_gian_xu_phat], [noi_giam_giu_xe], [flag_da_nop_phat]) VALUES (1, 1, N'47E1-34312', N'13 Nguyễn Huệ, Quận 1', 0, 2000000, CAST(N'2020-11-30T14:00:00.000' AS DateTime), CAST(N'2020-11-30T14:20:00.000' AS DateTime), 3, 1)
@@ -175,16 +169,23 @@ INSERT into  [Luat] ([ten_luat], [noi_dung], [ngay_ban_hanh], [muc_xu_phat]) VAL
 INSERT into  [Luat] ([ten_luat], [noi_dung], [ngay_ban_hanh], [muc_xu_phat]) VALUES (N'Điều 13 Luật Giao thông đường bộ', N'Chạy quá tốc độ quy định từ 15 đến 20km/h', CAST(N'2020-09-11' AS Date), 1500000)
 
 INSERT into  [PhieuNopPhat] ([ma_vi_pham], [tien_phat], [tien_ship], [tong_tien_nop], [phuong_thuc_dong_phat], [flag_ship], [dia_chi_ship], [ngay_nop_phat], [flag_da_nhan_xe]) VALUES (1, 450000, 150000, 600000, N'Chuyển khoản ngân hàng', 1, N'Quận 2, TP HCM', CAST(N'2020-11-23T00:00:00.000' AS DateTime), 1)
-INSERT into  [PhieuNopPhat] ([ma_vi_pham], [tien_phat], [tien_ship], [tong_tien_nop], [phuong_thuc_dong_phat], [flag_ship], [dia_chi_ship], [ngay_nop_phat], [flag_da_nhan_xe]) VALUES (3, 2100000, 0, 2100000, N'Viettel Pay', 0, NULL, CAST(N'2020-10-03T00:00:00.000' AS DateTime), 0)
-INSERT into  [PhieuNopPhat] ([ma_vi_pham], [tien_phat], [tien_ship], [tong_tien_nop], [phuong_thuc_dong_phat], [flag_ship], [dia_chi_ship], [ngay_nop_phat], [flag_da_nhan_xe]) VALUES (2, 2000000, 330000, 2330000, N'Chuyển khoản ngân hàng', 1, N'Quan 2', CAST(N'2021-01-10T18:19:00.580' AS DateTime), 0)
+INSERT into  [PhieuNopPhat] ([ma_vi_pham], [tien_phat], [tien_ship], [tong_tien_nop], [phuong_thuc_dong_phat], [flag_ship], [dia_chi_ship], [ngay_nop_phat], [flag_da_nhan_xe]) VALUES (2, 2100000, 0, 2100000, N'Viettel Pay', 0, NULL, CAST(N'2020-10-03T00:00:00.000' AS DateTime), 0)
+INSERT into  [PhieuNopPhat] ([ma_vi_pham], [tien_phat], [tien_ship], [tong_tien_nop], [phuong_thuc_dong_phat], [flag_ship], [dia_chi_ship], [ngay_nop_phat], [flag_da_nhan_xe]) VALUES (3, 2000000, 330000, 2330000, N'Chuyển khoản ngân hàng', 1, N'Quan 2', CAST(N'2021-01-10T18:19:00.580' AS DateTime), 0)
 
 INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (1, 1, N'Không đội mũ bảo hiểm')
 INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (3, 2, N'Nồng độ cồn vượt quá 0.5%/1ml máu')
 INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (3, 3, N'Phạt thêm 100000 làm hỏng máy đo cồn')
-INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (3, 6, N'Nồng độ cồn vượt quá 0.5%/1ml máu')
-INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (1, 6, N'Không đội mũ bảo hiểm')
-INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (1, 7, N'Không đội mũ bảo hiểm')
-INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (2, 7, N'Vượt đèn đỏ')
+INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (3, 4, N'Nồng độ cồn vượt quá 0.5%/1ml máu')
+INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (2, 1, N'Không đội mũ bảo hiểm')
+INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (1, 4, N'Không đội mũ bảo hiểm')
+INSERT into  [ViPhamLuat] ([ma_luat], [ma_vi_pham], [mo_ta_vi_pham]) VALUES (2, 2, N'Vượt đèn đỏ')
+
+insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (1,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Võ Văn Kiệt')
+insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (2,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Nguyễn Văn Cừ')
+insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (3,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Võ Văn Kiệt')
+insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (4,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Võ Văn Kiệt')
+insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (5,'10/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Võ Văn Kiệt')
+insert into Camera_Backup (ma_camera,thoi_gian,images,TenDuong) values (6,'08/09/2020','https://product.hstatic.net/1000339323/product/img_8847_a84cb83a16064c399b77f67b0b43e97a_master.jpg',N'Trần Hưng Đạo')
 
 
 
