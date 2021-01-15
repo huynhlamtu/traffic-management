@@ -4,6 +4,7 @@
 
 <div style="text-align:center"><h2>Điều Khiển Giao Thông</h2></div>
 
+
 <div style=" margin-top:10px" class="container">
     <form class="form-inline" style="margin-top: 30px" method="post" action="/DieuKhienDenGiaoThong/Index">
         <span style="margin-right:10px"><b>Chốt Đường: </b></span>
@@ -37,7 +38,7 @@
         <input value="@Model.ma_nga_duong" name="ma_nga_duong" hidden />
         <div class="container">
             <div class="row">
-                <div class="col-xs-4 col-md-4">
+                <div class="col-xs-4 col-md-4" style="padding:10px">
                     <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
                         @if (Model.ngaDuong1 != null)
                         {
@@ -70,7 +71,7 @@
                         }
                     </div>
                 </div>
-                <div class="col-xs-4 col-md-4">
+                <div class="col-xs-4 col-md-4" style="padding:10px">
                     <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
                         @if (Model.ngaDuong2 != null)
                         {
@@ -111,7 +112,7 @@
 
 
                 </div>
-                <div class="col-xs-4 col-md-4 ">
+                <div class="col-xs-4 col-md-4 " style="padding:10px">
                     <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
                         @if (Model.ngaDuong3 != null)
                         {
@@ -148,7 +149,7 @@
                     </div>
 
                 </div>
-                <div class="col-xs-4 col-md-4">
+                <div class="col-xs-4 col-md-4" style="padding:10px">
                     <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
                         @if (Model.ngaDuong4 != null)
                         {
@@ -183,7 +184,7 @@
                         }
                     </div>
                 </div>
-                <div class="col-xs-4 col-md-4 ">
+                <div class="col-xs-4 col-md-4 " style="padding:10px">
                     <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
                         <div style="text-align:center">
                             <B style="font-size:40px">Phần Điều Kiển</B>
@@ -202,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 col-md-4">
+                <div class="col-xs-4 col-md-4" style="padding:10px">
                     <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
                         @if (Model.ngaDuong6 != null)
                         {
@@ -237,7 +238,7 @@
                         }
                     </div>
                 </div>
-                <div class="col-xs-4 col-md-4 ">
+                <div class="col-xs-4 col-md-4 " style="padding:10px">
                     <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
                         @if (Model.ngaDuong7 != null)
                         {
@@ -270,7 +271,7 @@
                         }
                     </div>
                 </div>
-                <div class="col-xs-4 col-md-4 ">
+                <div class="col-xs-4 col-md-4 " style="padding:10px">
                     <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
                         @if (Model.ngaDuong8 != null)
                         {
@@ -306,7 +307,7 @@
                         }
                     </div>
                 </div>
-                <div class="col-xs-4 col-md-4 ">
+                <div class="col-xs-4 col-md-4 " style="padding:10px">
                     <div class="ngaduong mr-1 ml-1 mt-1 mb-1">
                         @if (Model.ngaDuong9 != null)
                         {
@@ -354,11 +355,10 @@
                 {
                     foreach (var item in Model.Cameras)
                     {
-                        <h5>Ngã Thứ @item.tenNga</h5>
                         <div class="carousel-item @item.fisrt">
                             <img class="d-block w-100" src="@item.images" alt="First slide" style="width:auto;height:500px">
                             <div class="carousel-caption d-none d-md-block">
-                                
+                                <h5>Ngã Thứ @item.tenNga</h5>
 
                             </div>
                         </div>
